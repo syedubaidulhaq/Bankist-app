@@ -1,0 +1,23 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live-server": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syedubaidulhaq/Bankist-app.git"
+  },
+  "author": "Ubaid ul haq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syedubaidulhaq/Bankist-app/issues"
+  },
+  "homepage": "https://github.com/syedubaidulhaq/Bankist-app#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
