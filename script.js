@@ -42,7 +42,7 @@ const account2 = {
     '2020-01-25T14:18:46.235Z',
     '2020-02-05T16:33:06.386Z',
     '2021-03-20T14:43:26.374Z',
-    '2021-03-22T18:49:59.371Z',
+    '2021-03-16T13:49:59.371Z',
     '2021-03-17T12:01:20.894Z',
   ],
   currency: 'USD',
@@ -88,8 +88,8 @@ const formatMovementsDate = function(date) {
    const daysPassed = calcDaysPassed(new Date(), date);
    console.log(daysPassed);
 
-   if (daysPassed === 0) return "today";
-   if (daysPassed ===1)  return "yesterday";   
+   if (daysPassed === 0) return 'today';
+   if (daysPassed === 1)  return 'yesterday';   
    if (daysPassed <= 7) return `${dayPassed} days ago`;
    else{
    const day =  `${date.getDate()}`.padStart(2, 0);
@@ -97,7 +97,7 @@ const month = `${date.getMonth()}`.padStart(2, 0);
 const year = date.getFullYear();
   return `${day}/${month}/ ${year}`;
    }
-}
+};
 
 const displayMovements = function (acc, sort = false) {
   containerMovements.innerHTML = '';
@@ -519,3 +519,9 @@ console.log(future);
 
 */
 
+const future = new Date[2037, 10, 19, 15, 23];
+console.log(future);
+
+const calcDaysPassed = (date1, date2) => Math.abs(date2 - date1)/ (1000 * 60 * 60 * 24);
+const day1 = calcDaysPassed(new Date(2037, 3, 4), new Date(2037, 3, 14));
+console.log(days1);
